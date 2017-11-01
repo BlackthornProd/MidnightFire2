@@ -116,8 +116,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 527321030}
-  - component: {fileID: 527321029}
   - component: {fileID: 527321028}
+  - component: {fileID: 527321029}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 527321027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -822479833, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: -859942077, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -160,13 +160,14 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 1215975109408736, guid: de853448958f24f7190691e0490e726d,
-    type: 2}
+  m_PlayerPrefab: {fileID: 0}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
   m_OfflineScene: Lobby
-  m_OnlineScene: Game
-  m_SpawnPrefabs: []
+  m_OnlineScene: 
+  m_SpawnPrefabs:
+  - {fileID: 1637477021659810, guid: 9baca4e674f834d3d9023a41dea25f1f, type: 2}
+  - {fileID: 1637477021659810, guid: 411d1e0bac2364a189edf269ed4be714, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -222,6 +223,17 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
+  m_ShowLobbyGUI: 1
+  m_MaxPlayers: 2
+  m_MaxPlayersPerConnection: 1
+  m_MinPlayers: 2
+  m_LobbyPlayerPrefab: {fileID: 114416043838991916, guid: 67c2257aed1374e6e9bedd7ae72d3d2a,
+    type: 2}
+  m_GamePlayerPrefab: {fileID: 1215975109408736, guid: de853448958f24f7190691e0490e726d,
+    type: 2}
+  m_LobbyScene: Lobby
+  m_PlayScene: Game
+  lobbySlots: []
 --- !u!4 &527321030
 Transform:
   m_ObjectHideFlags: 0
